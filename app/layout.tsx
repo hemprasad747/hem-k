@@ -1,6 +1,6 @@
 // layout.jsx
 import React from 'react';
-import "./globals.css"; // Adjust the path based on your actual structure
+import "./globals.css"; 
 import { Inter } from "next/font/google";
 import { Metadata } from "next";
 import StarsCanvas from "@/components/main/StarBackground";
@@ -8,6 +8,7 @@ import Navbar from "@/components/main/Navbar";
 import Footer from "@/components/main/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
+
 export const metadata: Metadata = {
   title: "universe Portfolio",
   description: "This is my portfolio",
