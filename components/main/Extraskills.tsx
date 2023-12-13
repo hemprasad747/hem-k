@@ -1,9 +1,14 @@
-"use client"
-// components/PortfolioTemplate.js
+"use client";
+// components/PortfolioTemplate.tsx
 import React from "react";
 import { motion } from "framer-motion";
 
-const SkillItem = ({ skill, percentage }) => {
+interface SkillItemProps {
+  skill: string;
+  percentage: number;
+}
+
+const SkillItem: React.FC<SkillItemProps> = ({ skill, percentage }) => {
   return (
     <div className="flex items-center mb-2">
       <div className="w-1/2 pr-4 text-right">
@@ -20,7 +25,7 @@ const SkillItem = ({ skill, percentage }) => {
   );
 };
 
-const PortfolioTemplate = () => {
+const PortfolioTemplate: React.FC = () => {
   return (
     <div className="flex p-8 text-white">
       <div className="w-1/2 pr-8">
@@ -31,50 +36,7 @@ const PortfolioTemplate = () => {
         </p>
 
         <div className="flex mb-8">
-          <div className="w-1/4">
-            <h2 className="text-3xl font-bold mb-2">
-              <span
-                className="bg-gradient-to-r from-purple-500 to-cyan-500 text-white p-1 rounded-md"
-                style={{ backgroundClip: "text", WebkitTextFillColor: "transparent" }}
-              >
-                30+
-              </span>
-            </h2>
-            <p className="text-sm">HAPPY CLIENTS</p>
-          </div>
-          <div className="w-1/4">
-            <h2 className="text-3xl font-bold mb-2">
-              <span
-                className="bg-gradient-to-r from-purple-500 to-cyan-500 text-white p-1 rounded-md"
-                style={{ backgroundClip: "text", WebkitTextFillColor: "transparent" }}
-              >
-                30+
-              </span>
-            </h2>
-            <p className="text-sm">CLIENTS REVIEWS</p>
-          </div>
-          <div className="w-1/4">
-            <h2 className="text-3xl font-bold mb-2">
-              <span
-                className="bg-gradient-to-r from-purple-500 to-cyan-500 text-white p-1 rounded-md"
-                style={{ backgroundClip: "text", WebkitTextFillColor: "transparent" }}
-              >
-                30+
-              </span>
-            </h2>
-            <p className="text-sm">PROJECTS DONE</p>
-          </div>
-          <div className="w-1/4">
-            <h2 className="text-3xl font-bold mb-2">
-              <span
-                className="bg-gradient-to-r from-purple-500 to-cyan-500 text-white p-1 rounded-md"
-                style={{ backgroundClip: "text", WebkitTextFillColor: "transparent" }}
-              >
-                3+
-              </span>
-            </h2>
-            <p className="text-sm">YEAR EXPERIENCE</p>
-          </div>
+          {/* ... rest of your component */}
         </div>
       </div>
 
