@@ -12,6 +12,7 @@ const Hero = () => {
         alt="Cyber Image"
         layout="fill"
         objectFit="cover"
+        style={{ opacity: 0.5 }}  {/* Set opacity to half */}
         className="rotate-0 absolute top-[-340px] left-0 z-[1]"
       />
       <HeroContent />
