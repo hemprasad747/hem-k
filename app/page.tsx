@@ -5,6 +5,7 @@ import Skills from "@/components/main/Skills";
 import ExtraSkills from "@/components/main/Extraskills";
 import Encryption from "@/components/main/Encryption";
 
+
 export default function Home() {
   return (
     <main className="h-full w-full">
