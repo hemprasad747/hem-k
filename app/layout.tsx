@@ -6,7 +6,6 @@ import { Metadata } from "next";
 import StarsCanvas from "@/components/main/StarBackground";
 import Navbar from "@/components/main/Navbar";
 import Footer from "@/components/main/Footer";
-import EmailSection from "@/components/main/EmailSection"; // Import the EmailSection component
 
 const inter = Inter({ subsets: ["latin"] });
 
