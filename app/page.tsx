@@ -4,8 +4,8 @@ import Hero from "@/components/main/Hero";
 import Skills from "@/components/main/Skills";
 import ExtraSkills from "@/components/main/Extraskills";
 import Encryption from "@/components/main/Encryption";
-import Projrcts from "@/components/main/Projects";
-import EmailSection from "@/components/main/EmailSection";
+
+
 
 export default function Home() {
   return (
