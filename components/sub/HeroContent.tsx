@@ -1,16 +1,17 @@
+// components/sub/HeroContent.tsx
 "use client";
 
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import {
-  slideInFromLeft,
-  slideInFromRight,
-  slideInFromTop,
-} from "@/utils/motion";
+import { slideInFromLeft, slideInFromRight, slideInFromTop } from "@/utils/motion";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 
-const TypewriterText = ({ text }) => {
+interface TypewriterTextProps {
+  text: string;
+}
+
+const TypewriterText: React.FC<TypewriterTextProps> = ({ text }) => {
   const [displayedText, setDisplayedText] = useState("");
 
   useEffect(() => {
@@ -55,15 +56,14 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.5)}
           className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
         >
-          <TypewriterText text="foortifying the resilient Cybersecurity experience" />
+          <TypewriterText text="fortifying the resilient Cybersecurity experience" />
         </motion.div>
 
         <motion.p
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          As a Cybersecurity Professional, I specialize in fortifying digital assets and defending against cyber threats,
-          Dive into my projects and skills.
+          As a Cybersecurity Professional, I specialize in fortifying digital assets and defending against cyber threats. Dive into my projects and skills.
         </motion.p>
         <motion.a
           variants={slideInFromLeft(1)}
