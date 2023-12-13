@@ -56,7 +56,7 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.5)}
           className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
         >
-          <TypewriterText text="fortifying the resilient Cybersecurity experience" />
+          <TypewriterText text="foortifying the resilient Cybersecurity experience" />
         </motion.div>
 
         <motion.p
